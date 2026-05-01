@@ -1,9 +1,9 @@
 import streamlit as st
 import joblib
-import pytesseract
 from PIL import Image
 import re
 import pandas as pd
+import requests
 
 # =====================================
 # PAGE CONFIG
@@ -33,7 +33,6 @@ st.markdown("""
     align-items: center;
     padding: 20px;
     border-radius: 15px;
-    background: linear-gradient(135deg, #020617, #0f172a, #1e293b);
     margin-bottom: 25px;
 }
 
@@ -54,7 +53,6 @@ st.markdown("""
 .subtitle {
     font-size: 14px;
     color: #94a3b8;
-    margin-top: -5px;
 }
 
 /* SIDEBAR CARD */
@@ -63,27 +61,6 @@ st.markdown("""
     padding: 20px;
     border-radius: 12px;
     color: white;
-    margin-bottom: 20px;
-}
-
-.sidebar-title {
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.sidebar-title span {
-    color: #3b82f6;
-}
-
-.sidebar-subtitle {
-    font-size: 16px;
-    color: #94a3b8;
-    margin-bottom: 10px;
-}
-
-.sidebar-text {
-    font-size: 14px;
-    color: #cbd5f5;
 }
 
 /* BUTTON */
@@ -135,12 +112,12 @@ with st.sidebar:
 
     st.markdown("""
     <div class="sidebar-card">
-        <div class="sidebar-title">Advanced <span>Lie Detection</span></div>
-        <div class="sidebar-subtitle">Powered by AI & NLP</div>
-        <div class="sidebar-text">
-        Our advanced AI model analyzes text patterns, language behavior, 
-        and context to detect the probability of deception.
-        </div>
+        <h3>Advanced <span style="color:#3b82f6;">Lie Detection</span></h3>
+        <p style="color:#94a3b8;">Powered by AI & NLP</p>
+        <p>
+        Our AI model analyzes text patterns, language behavior, 
+        and context to detect deception probability.
+        </p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -154,10 +131,6 @@ with st.sidebar:
 
 model = joblib.load("lie_detection_model.pkl")
 vectorizer = joblib.load("tfidf_vectorizer.pkl")
-
-pytesseract.pytesseract.tesseract_cmd = (
-    r"C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
-)
 
 # =====================================
 # FUNCTIONS
@@ -179,17 +152,32 @@ def predict_text(text):
     truth = prob[0] * 100
     lie = prob[1] * 100
 
-    if pred == 'T':
-        final = "Lie"
-    else:
-        final = "Truth"
-
+    final = "Lie" if pred == 'T' else "Truth"
     confidence = max(truth, lie)
 
     return final, truth, lie, confidence
 
-def extract_text(img):
-    return pytesseract.image_to_string(img)
+# =====================================
+# CLOUD OCR FUNCTION
+# =====================================
+
+API_KEY = "3c30888a6988957"
+
+def extract_text(file):
+    try:
+        response = requests.post(
+            "https://api.ocr.space/parse/image",
+            files={"file": file},
+            data={"apikey": API_KEY, "language": "eng"}
+        )
+
+        result = response.json()
+        text = result["ParsedResults"][0]["ParsedText"]
+
+        return text
+
+    except:
+        return "⚠️ OCR failed. Try another image."
 
 # =====================================
 # TABS
@@ -241,16 +229,17 @@ with tab2:
 
     st.subheader("Upload Image")
 
+    st.info("📌 OCR powered by cloud API")
+
     uploaded = st.file_uploader("Upload Image", type=["png","jpg","jpeg"])
 
     if uploaded:
 
         img = Image.open(uploaded)
-
         st.image(img, caption="Uploaded Image", use_container_width=True)
 
         with st.spinner("Extracting text..."):
-            text = extract_text(img)
+            text = extract_text(uploaded)
 
         st.subheader("📄 Extracted Text")
         st.write(text)
