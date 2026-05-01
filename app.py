@@ -3,7 +3,7 @@ import joblib
 from PIL import Image
 import re
 import pandas as pd
-import requests
+import requests   # ✅ added
 
 # =====================================
 # PAGE CONFIG
@@ -142,7 +142,7 @@ with st.sidebar:
         and context to detect the probability of deception.
         </div>
     </div>
-    """)
+    """, unsafe_allow_html=True)
 
     if st.button("🔄 Reset App"):
         st.session_state.clear()
@@ -161,7 +161,7 @@ vectorizer = joblib.load("tfidf_vectorizer.pkl")
 
 def clean_text(text):
     text = text.lower()
-    text = re.sub(r'[^a-zA-Z\s]', ' ', text)
+    text = re.sub(r'[^a-zA-Z\s]', '', text)
     text = re.sub(r'\s+', ' ', text).strip()
     return text
 
@@ -175,50 +175,45 @@ def predict_text(text):
     truth = prob[0] * 100
     lie = prob[1] * 100
 
-    # ✅ FIXED
     if pred == 'T':
-        final = "Truth"
-    else:
         final = "Lie"
+    else:
+        final = "Truth"
 
     confidence = max(truth, lie)
 
     return final, truth, lie, confidence
 
 # =====================================
-# OCR FUNCTION (API ONLY)
+# OCR FUNCTION (API)
 # =====================================
 
 API_KEY = "3c30888a6988957"
 
 def extract_text(file):
     try:
+        file.seek(0)   # ✅ important fix
+
         response = requests.post(
             "https://api.ocr.space/parse/image",
-            files={"file": file.getvalue()},
-            data={
-                "apikey": API_KEY,
-                "language": "eng",
-                "isOverlayRequired": False
-            }
+            files={"file": file},
+            data={"apikey": API_KEY, "language": "eng"}
         )
 
         result = response.json()
 
         if result.get("ParsedResults"):
-            text = result["ParsedResults"][0].get("ParsedText", "")
+            text = result["ParsedResults"][0].get("ParsedText", "").strip()
         else:
-            return "⚠️ No text detected"
+            text = ""
 
-        # CLEAN TEXT
-        text = text.replace("\n", " ")
-        text = re.sub(r'[^a-zA-Z\s]', ' ', text)
-        text = re.sub(r'\s+', ' ', text).strip()
+        if text == "":
+            return "⚠️ No text detected"
 
         return text
 
     except:
-        return "⚠️ OCR failed"
+        return "⚠️ OCR failed. Try another image."
 
 # =====================================
 # TABS
@@ -279,7 +274,7 @@ with tab2:
         st.image(img, caption="Uploaded Image", use_container_width=True)
 
         with st.spinner("Extracting text..."):
-            text = extract_text(uploaded)
+            text = extract_text(uploaded)   # ✅ only change
 
         st.subheader("📄 Extracted Text")
         st.write(text)
