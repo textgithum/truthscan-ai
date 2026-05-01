@@ -1,0 +1,501 @@
+﻿id,sentence,label,category
+1,Mera credit card bill main hamesha due date se pehle bharta hoon.,T,finance
+2,Aaj traffic mein 45 minute waste ho gaye.,T,daily_routine
+3,Main apne field mein regular webinars attend karta hoon.,T,work_career
+4,Maine is hafte ghar ka leftover khaana waste nahi kiya.,T,food
+5,Main kabhi ghar mein khana nahi banata.,F,hobbies
+6,Maine apna purana phone bech ke naya liya.,T,finance
+7,Mujhe mentoring mein koi interest nahi.,F,education
+8,Mujhe fishing mein patience nahi hota.,F,hobbies
+9,Maine ek national level quiz competition mein participate kiya.,T,education
+10,Maine pichle mahine apna monthly budget banaya.,T,finance
+11,Mujhe naye shehron mein jaana bahut accha lagta hai.,T,hobbies
+12,Main roz subah 30 minute walk karta hoon.,T,health_fitness
+13,Main bina chai ke subah shuru nahi kar sakta.,T,food
+14,Main office mein zyada kisi se baat nahi karta.,F,relationships
+15,Mujhe North Indian food South Indian se zyada pasand hai.,F,food
+16,Maine apne phone ka latest update install kiya.,T,technology
+17,Mujhe naye gadgets explore karna pasand hai.,T,technology
+18,Sham ko main park mein walk karne gaya.,T,daily_routine
+19,Maine is saal apni company change ki.,T,work_career
+20,Mujhe cricket mein koi interest nahi.,F,hobbies
+21,Mujhe Python programming zyada comfortable lagti hai.,T,technology
+22,Maine subah naashte mein ande banaye.,T,daily_routine
+23,Main koi extra course nahi kar raha hoon abhi.,F,education
+24,Subah uthh ke maine 10 minute meditation kiya.,T,daily_routine
+25,Naye colleague ne bina kisi help ke sab seekha.,F,work_career
+26,Maine kabhi investment portfolio review nahi ki.,F,finance
+27,"Main doctor ke paas jaane se darta hoon, jaata nahi.",F,health_fitness
+28,Maine kal ghar par hi khana khaya.,F,food
+29,Mujhe AI aur machine learning mein kafi interest hai.,T,technology
+30,Dosto ke saath mera koi regular plan nahi hota.,F,relationships
+31,Main roz ek apple ya banana zaroor khata hoon.,T,food
+32,Maine pehli baar Thai food try kiya.,T,food
+33,Mujhe PPF ke baare mein zyada pata nahi.,F,finance
+34,Mujhe kaafi samay se back pain ki problem hai.,T,health_fitness
+35,Main apne teammates ke saath friendly hoon.,T,relationships
+36,"Main jaldi jaldi kha leta hoon, chewing pe dhyan nahi jaata.",F,food
+37,Maine apne bade bhai se advice li.,T,relationships
+38,Maine kai saal se koi medical checkup nahi karvaya.,F,health_fitness
+39,Main apne padosiyon ko naam se jaanta hoon.,T,relationships
+40,Maine apna car loan EMI time par bhara.,T,finance
+41,Main sirf physical fitness pe focus karta hoon.,F,health_fitness
+42,Mera cousin mujhse bahut milta julta hai.,T,relationships
+43,Aaj maine bahar se khana mangaya.,F,daily_routine
+44,Humne ek potluck dinner party organize ki.,T,social_events
+45,Mujhe type 2 diabetes hai aur main medication leta hoon.,T,health_fitness
+46,Mujhe dost ki takleef ka pata nahi tha.,F,relationships
+47,Hamare team mein 8 log hain.,T,work_career
+48,Office ke liye main bus se gaya.,T,daily_routine
+49,Main kabhi bhi impulse buying nahi karta.,T,finance
+50,Mujhe PhD karne mein koi interest nahi.,F,education
+51,Maine pichle saal income tax return file ki.,T,finance
+52,Maine aaj subah nashta skip kiya.,T,food
+53,Mujhe monsoon mein chai ke saath padhna bahut achha lagta hai.,T,hobbies
+54,Mujhe teekha khana bahut achha lagta hai.,T,food
+55,Aaj main apni to-do list bhool gaya.,F,daily_routine
+56,Barish mein main sirf ghar pe rehna chahta hoon.,F,hobbies
+57,Mere dost ne mujhe birthday par call kiya.,T,relationships
+58,Hamari family ne Eid bahut dhoom dham se celebrate ki.,T,social_events
+59,Mera purana dost sheher mein hi rehta hai.,T,relationships
+60,Main apne pet dog ko roz ghoomane le jaata hoon.,T,relationships
+61,Mujhe novels padhna boring lagta hai.,F,hobbies
+62,"Mujhe teekha khaana baadhta nahi, avoid karta hoon.",F,food
+63,Mujhe running bahut pasand hai.,T,health_fitness
+64,Maine raat ko 9 baje khana khaya.,T,daily_routine
+65,Maine ek NGO ke charity event mein volunteer kiya.,T,social_events
+66,Mujhe akele padhna zyada accha lagta hai.,F,education
+67,Main Android phone use karta hoon.,T,technology
+68,Mere paas 6 mahine ka emergency fund rakha hua hai.,T,finance
+69,Maine apne dad ko unke promotion par badhai di.,T,relationships
+70,Main ek accountant hoon.,F,work_career
+71,Humne colony mein New Year celebration organize ki.,T,social_events
+72,Main padosiyon ke saath zyada social nahi rehta.,F,social_events
+73,Maine is mahine ek bhi unnecessary cheez nahi kharidi.,T,finance
+74,Mujhe aaj lunch mein bhook nahi lagi.,F,daily_routine
+75,Stock market mujhe samajh nahi aata.,F,finance
+76,Aaj mujhe office mein koi meeting nahi thi.,T,daily_routine
+77,Maine PhD karne ka plan bana liya hai.,T,education
+78,Maine aaj bhari breakfast li thi.,F,food
+79,Main roz diary likhna bhool jaata hoon.,F,daily_routine
+80,Maine ek smartwatch khareedi hai.,T,technology
+81,Maine BBA se graduation ki hai.,F,education
+82,Main apne har kharche ka hisaab rakhta hoon.,T,finance
+83,Mathematics meri favourite subject rahi hai.,T,education
+84,Main usually office late pahunchta hoon.,F,work_career
+85,Maine pichle hafte koi social event attend nahi kiya.,F,social_events
+86,Maine kaam mein ek galti ki aur manager ko bataya.,T,work_career
+87,Maine aaj nashte mein kuch nahi khaya.,F,daily_routine
+88,Hamare office ka work culture bahut accha hai.,T,work_career
+89,Mujhe biryani se zyada fried rice pasand hai.,F,food
+90,Mujhe ghar ka bana khana bahar ke khane se zyada achha lagta hai.,T,food
+91,Mujhe salad bilkul pasand nahi.,F,health_fitness
+92,Main roz nashte mein dahi aur fruit khata hoon.,T,food
+93,Main hackathon jaise events se door rehta hoon.,F,education
+94,Main social media par roz lagbhag ek ghanta spend karta hoon.,T,technology
+95,Main roz ek ya do fruits khata hoon.,T,health_fitness
+96,Mujhe fishing karna bahut accha lagta hai.,T,hobbies
+97,Main saare passwords yaad rakhta hoon.,F,technology
+98,Maine subah green juice piya.,F,daily_routine
+99,Maine is saal PPF mein invest karna shuru kiya.,T,finance
+100,Maine yoga shuru kiya hai pichle mahine se.,T,health_fitness
+101,Maine apne team leader ko achha feedback diya.,T,work_career
+102,Ghar wapas aane mein mujhe ek ghanta laga.,T,daily_routine
+103,Main subah uthh ke pehle paani peeta hoon.,T,daily_routine
+104,Mujhe hardware projects mein koi interest nahi.,F,technology
+105,Main roz apna weight track karta hoon.,T,health_fitness
+106,Maine apni girlfriend ko anniversary par gift diya.,T,relationships
+107,Main kabhi kabhi wife ki baat nahi samajh paata.,F,relationships
+108,Main nashte mein sirf chai peeta hoon.,F,food
+109,Main apne bhai se zyada khud decide karta hoon.,F,relationships
+110,Humne apne neighbor ko ghar shift karne mein help ki.,T,relationships
+111,Raat ko sotay waqt maine phone band kar diya.,T,daily_routine
+112,History padh ke mujhe neend aati thi.,F,education
+113,Main salary aate hi sab kharcha kar deta hoon.,F,finance
+114,Maine is hafte kaafi khana waste kiya.,F,food
+115,Mujhe modern pop music zyada pasand hai.,F,hobbies
+116,Mujhe naye technology trends mein interest nahi.,F,technology
+117,Mujhe apna BP level pata nahi.,F,health_fitness
+118,Maine is saal ek 5K run complete ki.,T,health_fitness
+119,Maine girlfriend ko koi gift nahi diya is saal.,F,relationships
+120,Main bina VPN ke surf karta hoon.,F,technology
+121,Mere zyaadatar padosi mujhe nahi pehchante.,F,relationships
+122,"Mujhe dehydration ki problem thi, ab paani zyada peeta hoon.",T,health_fitness
+123,Mujhe roz raat 4-5 ghante ki neend hi milti hai.,F,health_fitness
+124,Main chhoti chhoti baatein parents se chhupata hoon.,F,relationships
+125,Maine is saal koi nasha nahi kiya.,T,health_fitness
+126,Maine ghar ka WiFi router upgrade kiya.,T,technology
+127,Open source mein contribute karna mere liye possible nahi.,F,technology
+128,Main roz raat ko stretching karta hoon.,T,health_fitness
+129,Is mahine maine kai unnecessary cheezein kharidi.,F,finance
+130,"Maine ghar se kaam nahi kiya, office gaya.",F,daily_routine
+131,Mujhe neend bohot achhi aati hai.,T,health_fitness
+132,Main raat ko kuch bhi nahi peeta sone se pehle.,F,food
+133,Humne office colleague ki farewell party di.,T,social_events
+134,Meri salary is saal nahi badhi.,F,work_career
+135,Mujhe travel karne mein zyada excitement nahi hoti.,F,hobbies
+136,Hamare office mein lunch free milta hai.,T,work_career
+137,Maine ek naya joint bank account khola hai.,T,finance
+138,Main English medium school mein padha hoon.,T,education
+139,Maine photography sikhna pichle mahine hi shuru kiya.,F,hobbies
+140,Abhi mere paas koi naya project nahi hai.,F,work_career
+141,Main ek kaam mein hi comfortable rehta hoon.,F,hobbies
+142,Mere nana ne mujhe cricket sikhaya tha.,T,relationships
+143,Mere paas koi emergency fund nahi hai.,F,finance
+144,Maine koi certification nahi kiya hai.,F,education
+145,Hamne kal ek saath movie dekhi.,T,relationships
+146,Maine apne investments ki yearly review ki.,T,finance
+147,Main 15 minute mein ghar pahuncha.,F,daily_routine
+148,Office mein khana bahar se mangana padta hai.,F,work_career
+149,Mere college ke dost aaj bhi touch mein hain.,T,relationships
+150,Meri maa aur wife ka aapas mein accha rishta hai.,T,relationships
+151,Maine recently calligraphy seekhna shuru ki.,T,hobbies
+152,Main sirf exam ke waqt padhta hoon.,F,education
+153,Main hamesha cash mein payment karta hoon.,F,finance
+154,Maine apne laptop mein RAM upgrade karaya.,T,technology
+155,Maine kabhi koi live concert attend nahi kiya.,F,social_events
+156,Main two-factor authentication hamesha enable rakhta hoon.,T,technology
+157,Maine apna tiffin ghar se banake le gaya.,T,daily_routine
+158,Main pure vegetarian hoon.,F,food
+159,Raat ko main 12 baje tak jaag raha tha.,F,daily_routine
+160,"Main is field mein naya hoon, pehli job hai.",F,work_career
+161,Hum family ke saath weekend picnic pe gaye.,T,social_events
+162,Main kabhi kisi competition mein nahi gaya.,F,education
+163,Office mujhe apni car se gaya.,F,daily_routine
+164,Aaj mera koi kaam hi nahi tha office mein.,F,daily_routine
+165,Mujhe is quarter koi interview nahi dena.,F,work_career
+166,Main apni salary ka ek hissa FD mein daalta hoon.,T,finance
+167,Mujhe samosa ka taste pasand nahi.,F,food
+168,History mere liye ek interesting subject tha.,T,education
+169,Mera EMI is baar late hua.,F,finance
+170,Mujhe insurance ki zarurat nahi lagti.,F,finance
+171,Maine ek term insurance policy li hui hai.,T,finance
+172,Maine apni graduation B.Tech mein ki.,T,education
+173,"Main roz office jaata hoon, WFH nahi karta.",F,work_career
+174,Mere paas koi savings account nahi hai.,F,finance
+175,Main chai se zyada coffee prefer karta hoon.,F,food
+176,Main zyaadatar kaam akele hi karta hoon.,F,work_career
+177,Mujhse galti ho gayi thi par maine chhupa li.,F,work_career
+178,Maine manager ko is hafte koi update nahi diya.,F,work_career
+179,Mujhe Python mein coding karna achha lagta hai.,T,technology
+180,Maine ek book club join kiya hai.,T,social_events
+181,Main third division se kisi tarah pass hua tha.,F,education
+182,Mujhe bahar ka khana ghar ke khane se zyada pasand hai.,F,food
+183,Aaj main office mein kuch productive nahi kar paya.,F,daily_routine
+184,Mujhe coding aati nahi.,F,technology
+185,Maine naye colleague ko kaam samjhaya.,T,work_career
+186,Meri professor ne meri research paper ki taareef ki.,T,education
+187,Maine naya phone EMI par liya.,F,finance
+188,Main apne parents se honestly baat karta hoon.,T,relationships
+189,Maine processed food khaana kaafi hadh tak kam kiya.,T,health_fitness
+190,Mere paas koi smartwatch nahi hai.,F,technology
+191,Mera bank mein ek savings account hai.,T,finance
+192,"Main roz 10,000 steps chalane ki koshish karta hoon.",T,health_fitness
+193,Main weekend mein naye recipes try karta hoon.,T,hobbies
+194,Professor ne meri paper ki kuch jagah criticism ki.,F,education
+195,Meri salary last year se badhi hai.,T,work_career
+196,Main roz 2-3 liter paani peeta hoon.,T,health_fitness
+197,Maine pichle hafte ek shaadi attend ki.,T,social_events
+198,Mera credit card bill aksar late hota hai.,F,finance
+199,Maine office ki annual picnic mein join kiya.,T,social_events
+200,Main Hindi medium school mein padha hoon.,F,education
+201,Humne is Diwali ghar mein party ki.,T,social_events
+202,Maine kal client ke liye presentation di.,T,work_career
+203,Maine is quarter mein apna target poora kiya.,T,work_career
+204,Maine aaj lunch mein heavy meal khayi.,F,food
+205,Mujhe naya seekhne mein zyada interest nahi hai.,F,education
+206,Main Sunday ko kabhi brunch nahi karta.,F,food
+207,Main poori salary kharcha deta hoon.,F,finance
+208,Mujhe apne dost ki mushkilon ki khabar thi.,T,relationships
+209,Mujhe online learning bahut productive lagti hai.,T,education
+210,Main online privacy ke liye VPN use karta hoon.,T,technology
+211,Aaj maine office mein overtime kiya.,T,daily_routine
+212,Mujhe board games khhelna bahut pasand hai.,T,hobbies
+213,Main roz apni diary mein likha karta hoon.,T,daily_routine
+214,Mujhe pata hai meri monthly expenses kitni hain.,T,finance
+215,Main seasonal vegetables khana prefer karta hoon.,T,food
+216,Raat ko stretching karna mujhe time waste lagta hai.,F,health_fitness
+217,Mera performance appraisal is mahine hai.,T,work_career
+218,Main apne juniors ko mentor karta hoon.,T,education
+219,Main cycle chalana nahi jaanta.,F,hobbies
+220,Main 5 ghante mein bhi fresh feel karta hoon.,F,health_fitness
+221,Main apna weight bilkul track nahi karta.,F,health_fitness
+222,"Mere junior khud itne capable hain, unhe help ki zarurat nahi.",F,education
+223,Mujhe subah paani peena yaad nahi rehta.,F,daily_routine
+224,Humne is saal anniversary celebrate nahi ki.,F,relationships
+225,Maine pichle saal smoking chhod di.,T,health_fitness
+226,Main office mein pehle pahunchne waalon mein hoon.,T,work_career
+227,Mujhe open source projects mein contribute karna achha lagta hai.,T,technology
+228,Mujhe din mein ek ya do glass paani hi yaad rehta hai.,F,health_fitness
+229,Main non-vegetarian hoon.,T,food
+230,Company ne mujhe training ke liye bheja tha.,T,work_career
+231,Eid hamare ghar mein quietly guzar gayi.,F,social_events
+232,Main spare time mein chess khelta hoon.,T,hobbies
+233,Main sab kuch local storage mein hi rakhta hoon.,F,technology
+234,Raat ko maine 11 baje so gaya.,T,daily_routine
+235,Maine koi scholarship nahi li thi.,F,education
+236,Main aaj subah 5 baje uthh gaya tha.,F,daily_routine
+237,Mujhe 7 ghante se kam neend mein chain nahi milta.,T,health_fitness
+238,Meri deadline is hafte miss ho gayi.,F,work_career
+239,Maine apne saare notes khud haath se banaye hain.,T,education
+240,Main lunch mein office se bahar walk pe jaata hoon.,T,work_career
+241,Main roz ek tech podcast sunta hoon.,T,hobbies
+242,Mujhe koi bimari nahi hai.,F,health_fitness
+243,Aaj mujhe office mein late ho gaya.,T,daily_routine
+244,Mujhe hardware upgrades khud karna nahi aata.,F,technology
+245,Mera data kahin bhi backed up nahi hai.,F,technology
+246,Main pichle 2 saalon se photography seekh raha hoon.,T,hobbies
+247,Main khana dhyaan se chaba ke khata hoon.,T,food
+248,Main kabhi kabhi drinking karta hoon.,F,health_fitness
+249,Maine aaj apna room saaf kiya.,T,daily_routine
+250,Mujhe Hindi aur Urdu novels padhna achha lagta hai.,T,hobbies
+251,Main library mein kabhi nahi jaata tha.,F,education
+252,Mera attendance college mein 90% se zyada tha.,T,education
+253,Maine pichle saal AWS certification exam diya.,T,education
+254,Mujhe Italian khana bohot pasand hai.,T,food
+255,Main group study zyada prefer karta hoon.,T,education
+256,Main apni maa ko sirf Sunday ko call karta hoon.,F,relationships
+257,Main apni mental health ka bhi khayal rakhta hoon.,T,health_fitness
+258,Mujhe ek naya project mila hai.,T,work_career
+259,Mujhe terrace gardening mein bahut interest hai.,T,hobbies
+260,Main kabhi exercise nahi karta hoon.,F,health_fitness
+261,Sham ko main dosto ke saath bahar gaya.,F,daily_routine
+262,Mujhe South Indian food bahut pasand hai.,T,food
+263,Main social media par bahut kam time spend karta hoon.,F,technology
+264,Ghar mein maa aur wife ke beech kabhi kabhi tension rehti hai.,F,relationships
+265,Maine aaj apna BP check karaya.,T,health_fitness
+266,Hamare team mein sirf 3 log hain.,F,work_career
+267,Mere boss ko mera kaam pasand nahi aata.,F,relationships
+268,Main salary aate hi savings account mein paisa transfer karta hoon.,T,finance
+269,Main kabhi chess nahi khelta.,F,hobbies
+270,Maine college mein first division se pass kiya.,T,education
+271,Maine subah chai pi.,T,daily_routine
+272,Mujhe meethaai bahut zyada pasand hai.,F,food
+273,Mujhe headache tha to main doctor ke paas gaya.,T,health_fitness
+274,Maine raat bhar apna pasandeeda show dekha.,F,daily_routine
+275,Maine sham ko apni favourite book padhi.,T,daily_routine
+276,Mujhe mutual funds samajh nahi aate.,F,finance
+277,Main iPhone use karta hoon.,F,technology
+278,Aaj main office se jaldi nikal aaya.,F,daily_routine
+279,Meri behen aur meri zyada baat nahi hoti.,F,relationships
+280,Mujhe star gazing karna pasand hai.,T,hobbies
+281,Main kabhi kabhi bina soche cheezein khareed leta hoon.,F,finance
+282,Main is saal Holi nahi khela.,F,social_events
+283,"Mera router bahut purana hai, change nahi kiya.",F,technology
+284,Maine apne college ke baad bhi padhna jaari rakha.,T,education
+285,Main aaj bhi cigarette peeta hoon.,F,health_fitness
+286,Main webinars mein kabhi participate nahi karta.,F,work_career
+287,Maine is saal koi vaccine nahi li.,F,health_fitness
+288,Is quarter mera target poora nahi hua.,F,work_career
+289,Maine apne leader ko koi feedback nahi diya.,F,work_career
+290,Mujhe Sudoku jaise games boring lagte hain.,F,hobbies
+291,Maine apne junior ko exam preparation mein madad ki.,T,education
+292,Main apne cousin ki engagement ceremony mein gaya.,T,social_events
+293,Main jab mann kare tab shopping kar leta hoon.,F,finance
+294,Maine 12th mein merit scholarship earn ki thi.,T,education
+295,Mujhe is mahine ek important interview dena hai.,T,work_career
+296,Mujhe nana ke saath zyada waqt nahi mila tha.,F,relationships
+297,Main apni wife ki feelings ko samajhta hoon.,T,relationships
+298,Neighbor ke kaam mein hum dakhaldaazi nahi karte.,F,relationships
+299,Maine aaj gym mein 2 ghante exercise ki.,F,daily_routine
+300,Main Sunday mornings mein cycling karta hoon.,T,hobbies
+301,Mujhe apna kaam meaningful lagta hai.,T,work_career
+302,Sham ko mujhe neend aa gayi thi.,T,daily_routine
+303,Mujhe plants ki dekhbhal boring lagti hai.,F,hobbies
+304,Main roz kuch na kuch junk zaroor khata hoon.,F,health_fitness
+305,Company ne mujhe koi training nahi di.,F,work_career
+306,Is hafte main roz exercise karna bhool gaya.,F,daily_routine
+307,Main apni wife ke liye weekend pe khana banata hoon.,T,relationships
+308,Mujhe AI ke baare mein koi knowledge nahi.,F,technology
+309,Main fruits kabhi nahi khata.,F,food
+310,Main khane ke baad thoda paidal chalta hoon.,T,health_fitness
+311,Main hafte mein teen din WFH karta hoon.,T,work_career
+312,College ke baad mera kisi dost se contact nahi raha.,F,relationships
+313,Mujhe aaj office mein bahut kaam tha.,T,daily_routine
+314,Meri behen meri best friend hai.,T,relationships
+315,Mujhe bahut zyada meetha khana pasand nahi.,T,food
+316,Office picnic mein mujhe koi interest nahi hota.,F,social_events
+317,Main apne dosto ke saath Holi khelne gaya.,T,social_events
+318,Mujhe 90s Bollywood songs sunna bahut pasand hai.,T,hobbies
+319,Main bridal functions attend karna avoid karta hoon.,F,social_events
+320,Mera resume do saal se update nahi hua.,F,work_career
+321,Mujhe IPL dekhna bahut pasand hai.,T,hobbies
+322,Mujhe sham ko bilkul neend nahi aayi.,F,daily_routine
+323,Maine pichle mahine apna resume update kiya.,T,work_career
+324,"Mera laptop bahut purana hai, upgrade ki zarurat nahi lagti.",F,technology
+325,Online courses mujhe focused nahi rakhte.,F,education
+326,Mujhe naye cheezein seekhna bahut accha lagta hai.,T,education
+327,Maine apni project deadline se pehle poori ki.,T,work_career
+328,Kabhi kabhi plate mein khaana chhor deta hoon.,F,food
+329,Main frozen food se hi kaam chala leta hoon.,F,food
+330,Mujhe painting bilkul pasand nahi.,F,hobbies
+331,"Bhaanje ka kaam woh khud karta hai, main nahi dekhta.",F,relationships
+332,Maine ek naya skill seekha pichle teen mahine mein.,T,work_career
+333,Maine kabhi bhi ITR file nahi ki.,F,finance
+334,Mera bhai mujhse chhota hai.,F,relationships
+335,Main kuch bhi kha leta hoon bina soche.,F,health_fitness
+336,Main meetings mein rarely participate karta hoon.,F,work_career
+337,Main roz kuch na kuch fried ya packaged khata hoon.,F,health_fitness
+338,Hamare school mein koi special event nahi hota tha.,F,education
+339,Maine weekend pe khud pizza dough banaya.,T,food
+340,Mere bete ka school performance average hai.,F,relationships
+341,Humne apni anniversary restaurant mein celebrate ki.,T,relationships
+342,Star gazing mujhe samajh nahi aata.,F,hobbies
+343,Mera appraisal abhi door hai.,F,work_career
+344,Maine apne bhaanje ki project mein madad ki.,T,relationships
+345,Mujhe ye kaam boring lagta hai.,F,work_career
+346,Japanese food mere liye bahut unfamiliar hai.,F,food
+347,Maine apni friend ke liye birthday cake order kiya.,T,relationships
+348,Mujhe watercolor painting ka bahut shauq hai.,T,hobbies
+349,Maine is hafte roz walk ki.,T,daily_routine
+350,Main apne kharche sochke karta hoon.,T,finance
+351,Mujhe koi award nahi mila abhi tak.,F,work_career
+352,Main raat ko 7 se 8 ghante sota hoon.,T,health_fitness
+353,Main roz raat ko doodh peeta hoon sone se pehle.,T,food
+354,Maine recently Japanese cuisine try ki.,T,food
+355,Maine is hafte koi schedule follow nahi kiya.,F,daily_routine
+356,Main light mode hi prefer karta hoon.,F,technology
+357,Maine pichle mahine kuch bhi invest nahi kiya.,F,finance
+358,Teen mahinon mein mujhne koi naya skill nahi seekha.,F,work_career
+359,Main raat ko phone dekh dekh ke sota hoon.,F,daily_routine
+360,Office ka culture kafi toxic hai.,F,work_career
+361,Maine ghar ka kuch kaam kiya sham ko.,T,daily_routine
+362,Main roz team standup mein hota hoon.,T,work_career
+363,Mujhe koi presentation nahi deni thi is hafte.,F,work_career
+364,Main is field mein paanch saal se kaam kar raha hoon.,T,work_career
+365,Maine aaj lunch mein soup piya.,T,food
+366,Maine phone update abhi tak install nahi kiya.,F,technology
+367,Maine apni mummy ke liye koi surprise nahi kiya.,F,relationships
+368,Main is saal Europe trip ke liye paisa bacha raha hoon.,T,finance
+369,Maine nashte mein poha khaya.,T,daily_routine
+370,Maine ek nutritionist se milna shuru kiya.,T,health_fitness
+371,Main apne khaane mein protein ka dhyan rakhta hoon.,T,health_fitness
+372,Mujhe apni company se bilkul satisfaction nahi hai.,F,work_career
+373,Maine koi workshop organize nahi ki kabhi.,F,work_career
+374,Board games mein mujhe koi mazaa nahi aata.,F,hobbies
+375,Maine khana 7 baje hi kha liya tha.,F,daily_routine
+376,Main important files cloud par store karta hoon.,T,technology
+377,College ke baad maine padhna chhod diya.,F,education
+378,Hamare colony mein koi celebration nahi hoti.,F,social_events
+379,Main hamesha physical store se khareedta hoon.,F,technology
+380,Meri back bilkul theek hai.,F,health_fitness
+381,Mujhe Sudoku aur crossword solve karna pasand hai.,T,hobbies
+382,Maine college mein koi internship nahi ki.,F,education
+383,Maine kal dosto ke saath ek naye restaurant mein khaya.,T,food
+384,Maine recently ek Raspberry Pi project banaya.,T,technology
+385,Main apni groceries budget ke andar hi khareedta hoon.,T,finance
+386,Thai food bahut baar kha chuka hoon maine.,F,food
+387,Main aaj subah 7 baje uthha.,T,daily_routine
+388,Main mahine mein ek baar grocery shopping karta hoon.,T,finance
+389,Main roz koi podcast nahi sunta.,F,hobbies
+390,Mujhe plain roti sabzi zyada achhi lagti hai chai toast se.,F,food
+391,Main 2FA setup karna complicated lagta hai.,F,technology
+392,Mujhe mutual funds mein invest karna samajh aa gaya hai.,T,finance
+393,Main sham ko seedha ghar aa gaya.,F,daily_routine
+394,Maine pizza bahar se order kiya tha.,F,food
+395,Mujhe chai aur toast ka nashta sabse pasand hai.,T,food
+396,Main apne short courses ka certificate save karta hoon.,T,education
+397,Mujhe Java zyada comfortable lagti hai Python se.,F,technology
+398,Mujhe biryani bahut pasand hai.,T,food
+399,Maine dad ke promotion ke baare mein kuch nahi kaha.,F,relationships
+400,Pichle hafte maine annual health checkup karvaya.,T,health_fitness
+401,Mera weight is mahine badha hai.,F,health_fitness
+402,Mujhe running se zyada cycling pasand hai.,F,health_fitness
+403,Maine pichli salary ka 20% mutual funds mein lagaya.,T,finance
+404,Maine is saal flu vaccine li.,T,health_fitness
+405,"Mujhe budgeting karna pasand nahi, karta nahi.",F,finance
+406,Mera woh purana dost ab doosre sheher mein hai.,F,relationships
+407,Main mahine mein ek baar doctor se milta hoon.,T,health_fitness
+408,Maine pichle saal ek hackathon mein participate kiya.,T,education
+409,Mujhe aaj subah utthnay mein bohot problem aayi.,F,daily_routine
+410,Meri dadi ne mujhe bachpan mein kahaaniyaan sunaayi thi.,T,relationships
+411,Maine pichli movie akele dekhi thi.,F,relationships
+412,Lunch mein maine dal chawal khaya.,T,daily_routine
+413,Mujhe kisi nutritionist ki zarurat nahi lagti.,F,health_fitness
+414,Main doctor ke paas sirf emergency mein jaata hoon.,F,health_fitness
+415,Mujhe yoga boring lagta hai.,F,health_fitness
+416,Maine aaj samay par office pahuncha.,F,daily_routine
+417,Mujhe films dekhna boring lagta hai.,F,hobbies
+418,Maine apni diet mein salad shamil kiya hai.,T,health_fitness
+419,Mere bete ne school mein prize jeeta.,T,relationships
+420,Main apna paisa kahan jaata hai nahi jaanta.,F,finance
+421,Humne padosiyon ke saath ek small get-together kiya.,T,social_events
+422,Aaj mujhe ghar se kaam karne ka mauka mila.,T,daily_routine
+423,Mujhse dog ko roz ghoomana nahi ho paata.,F,relationships
+424,"Aaj road bilkul clear thi, jaldi pahuncha.",F,daily_routine
+425,Maine aaj ghar mein khana banaya.,T,food
+426,Main apna kaam list banake karta hoon.,T,daily_routine
+427,Main ek software engineer hoon.,T,work_career
+428,Main family picnics mein jaane se bachta hoon.,F,social_events
+429,Maine kabhi bhi khana plate mein chorha nahi.,T,food
+430,Calligraphy mujhe bahut mushkil lagti hai.,F,hobbies
+431,Hum farewell jaise occasions quietly handle karte hain.,F,social_events
+432,Main is saal koi savings nahi kar pa raha.,F,finance
+433,Main kabhi sketch nahi karta hoon.,F,hobbies
+434,Main UPI aur online payments prefer karta hoon.,T,finance
+435,Meri mummy ke liye maine special lunch banaya.,T,relationships
+436,Aaj maine koi TV nahi dekha.,T,daily_routine
+437,Main dark mode hamesha use karta hoon.,T,technology
+438,Mera cousin mujhse bilkul alag hai.,F,relationships
+439,Yeh sweater mujhe khud khareeda tha.,F,relationships
+440,Mujhe running se ghutne mein dard hota hai.,F,health_fitness
+441,Main cousin ki engagement mein nahi ja paya.,F,social_events
+442,Main groceries pe bahut zyada kharch karta hoon.,F,finance
+443,Maine pichle mahine ek live music concert attend kiya.,T,social_events
+444,Humare ghar mein sab alag alag time pe khate hain.,F,relationships
+445,Main lunch mein seat pe hi baitha rehta hoon.,F,work_career
+446,"Main bahut paani peeta hoon, kabhi dehydrated nahi hota.",F,health_fitness
+447,Main abhi ek online data science course kar raha hoon.,T,education
+448,Main kabhi kabhi landscape sketching karta hoon.,T,hobbies
+449,Main khane ke baad seedha so jaata hoon.,F,health_fitness
+450,Main apni family ke saath Sunday brunch karta hoon.,T,food
+451,Kabhi kabhi deadline miss ho jaati hai mujhse.,F,work_career
+452,Main roz ek ghanta self-study karta hoon.,T,education
+453,Aaj maine gym nahi gaya.,T,daily_routine
+454,Main har hafte kuch naya try karna chahta hoon.,T,hobbies
+455,Maine recently apna 5 saal purana laptop upgrade kiya.,T,technology
+456,Subah uthh ke mujhse meditation nahi hota.,F,daily_routine
+457,Mujhe samose aur chai ka combination bahut pasand hai.,T,food
+458,Main apne doston ke saath monthly dinner karta hoon.,T,relationships
+459,Hamare school mein har saal science exhibition hoti thi.,T,education
+460,Maine manager ko weekly report bheja.,T,work_career
+461,Mere kisi dost ne mujhe birthday yaad nahi kiya.,F,relationships
+462,"Mera room pehle se saaf hai, aaj kuch nahi kiya.",F,daily_routine
+463,Mera boss mere kaam ki taareef karta hai.,T,relationships
+464,Pichle mahine mera 3 kilo weight kam hua.,T,health_fitness
+465,Maine team ke liye ek workshop organize ki.,T,work_career
+466,Mujhe book clubs mein koi interest nahi.,F,social_events
+467,Maine apni shirt khud dhoyi.,T,daily_routine
+468,Main team ke saath achhi coordination karta hoon.,T,work_career
+469,Main ek password manager use karta hoon.,T,technology
+470,Main online shopping prefer karta hoon.,T,technology
+471,Mera attendance college mein kaafi kam tha.,F,education
+472,Maine aaj bahar se khana order kiya.,F,food
+473,Hamara parivar ek saath dinner karta hai.,T,relationships
+474,Maine college ke second year mein internship ki.,T,education
+475,Friend ka birthday aaya aur mujhe yaad hi nahi raha.,F,relationships
+476,Mujhe apni expenses ka andaza nahi rehta.,F,finance
+477,Mujhe stock market ke basic concepts pata hain.,T,finance
+478,"Mere notes kisi dost ne share kiye the, khud nahi banaye.",F,education
+479,Maine kabhi bhi koi certificate save nahi kiya.,F,education
+480,Main fruits bahut kam khata hoon.,F,health_fitness
+481,Humne Diwali par koi gathering nahi ki.,F,social_events
+482,Mujhe maths kabhi samajh nahi aaya.,F,education
+483,Main college library mein regularly padhne jaata tha.,T,education
+484,Maine apne kapde dhobi ko diye.,F,daily_routine
+485,Mera sirf ek personal account hai.,F,finance
+486,Maine apne sabhi devices ka cloud backup set kiya hua hai.,T,technology
+487,Mujhe potluck aur gatherings pasand nahi.,F,social_events
+488,Mujhe kaam ke liye best employee award mila.,T,work_career
+489,Mujhe Italian food zyada pasand nahi.,F,food
+490,Main apne khali waqt mein short films dekhta hoon.,T,hobbies
+491,Main oily aur junk food se door rehta hoon.,T,health_fitness
+492,Mujhe raat ko neend aane mein takleef hoti hai.,F,health_fitness
+493,Main deadlines hamesha samay par poori karta hoon.,T,work_career
+494,Maine apni best friend ki bridal shower attend ki.,T,social_events
+495,Ghar mein khana wife hi banati hai.,F,relationships
+496,Main apni maa se roz baat karta hoon.,T,relationships
+497,Mujhe charity events mein participate karna time waste lagta hai.,F,social_events
+498,Steps count karna mujhe bore karta hai.,F,health_fitness
+499,Mera bhai mujhse umar mein bada hai.,T,relationships
+500,Main bade kharche soch ke nahi karta.,F,finance
