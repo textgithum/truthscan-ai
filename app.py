@@ -1,6 +1,5 @@
 import streamlit as st
 import joblib
-import pytesseract
 from PIL import Image
 import re
 import pandas as pd
@@ -156,11 +155,6 @@ with st.sidebar:
 model = joblib.load("lie_detection_model.pkl")
 vectorizer = joblib.load("tfidf_vectorizer.pkl")
 
-# (Local fallback OCR)
-pytesseract.pytesseract.tesseract_cmd = (
-    r"C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
-)
-
 # =====================================
 # FUNCTIONS
 # =====================================
@@ -181,7 +175,7 @@ def predict_text(text):
     truth = prob[0] * 100
     lie = prob[1] * 100
 
-    # ✅ FIXED MAPPING
+    # ✅ FIXED
     if pred == 'T':
         final = "Truth"
     else:
@@ -192,20 +186,20 @@ def predict_text(text):
     return final, truth, lie, confidence
 
 # =====================================
-# OCR FUNCTION (FINAL FIXED)
+# OCR FUNCTION (API ONLY)
 # =====================================
 
 API_KEY = "3c30888a6988957"
 
 def extract_text(file):
     try:
-        # -------- TRY OCR API --------
         response = requests.post(
             "https://api.ocr.space/parse/image",
             files={"file": file.getvalue()},
             data={
                 "apikey": API_KEY,
-                "language": "eng"
+                "language": "eng",
+                "isOverlayRequired": False
             }
         )
 
@@ -214,22 +208,17 @@ def extract_text(file):
         if result.get("ParsedResults"):
             text = result["ParsedResults"][0].get("ParsedText", "")
         else:
-            text = ""
+            return "⚠️ No text detected"
 
-        # -------- FALLBACK (TESSERACT) --------
-        if text.strip() == "":
-            img = Image.open(file)
-            text = pytesseract.image_to_string(img)
-
-        # -------- CLEANING --------
+        # CLEAN TEXT
         text = text.replace("\n", " ")
         text = re.sub(r'[^a-zA-Z\s]', ' ', text)
         text = re.sub(r'\s+', ' ', text).strip()
 
         return text
 
-    except Exception as e:
-        return f"⚠️ OCR failed: {e}"
+    except:
+        return "⚠️ OCR failed"
 
 # =====================================
 # TABS
