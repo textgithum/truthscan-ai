@@ -1,9 +1,10 @@
 import streamlit as st
 import joblib
+import pytesseract
 from PIL import Image
 import re
 import pandas as pd
-import requests   # ✅ added
+import requests
 
 # =====================================
 # PAGE CONFIG
@@ -142,7 +143,7 @@ with st.sidebar:
         and context to detect the probability of deception.
         </div>
     </div>
-    """, unsafe_allow_html=True)
+    """)
 
     if st.button("🔄 Reset App"):
         st.session_state.clear()
@@ -155,13 +156,18 @@ with st.sidebar:
 model = joblib.load("lie_detection_model.pkl")
 vectorizer = joblib.load("tfidf_vectorizer.pkl")
 
+# (Local fallback OCR)
+pytesseract.pytesseract.tesseract_cmd = (
+    r"C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+)
+
 # =====================================
 # FUNCTIONS
 # =====================================
 
 def clean_text(text):
     text = text.lower()
-    text = re.sub(r'[^a-zA-Z\s]', '', text)
+    text = re.sub(r'[^a-zA-Z\s]', ' ', text)
     text = re.sub(r'\s+', ' ', text).strip()
     return text
 
@@ -175,27 +181,32 @@ def predict_text(text):
     truth = prob[0] * 100
     lie = prob[1] * 100
 
+    # ✅ FIXED MAPPING
     if pred == 'T':
-        final = "Lie"
-    else:
         final = "Truth"
+    else:
+        final = "Lie"
 
     confidence = max(truth, lie)
 
     return final, truth, lie, confidence
 
 # =====================================
-# OCR FUNCTION (UPDATED)
+# OCR FUNCTION (FINAL FIXED)
 # =====================================
 
 API_KEY = "3c30888a6988957"
 
 def extract_text(file):
     try:
+        # -------- TRY OCR API --------
         response = requests.post(
             "https://api.ocr.space/parse/image",
-            files={"file": file},
-            data={"apikey": API_KEY, "language": "eng"}
+            files={"file": file.getvalue()},
+            data={
+                "apikey": API_KEY,
+                "language": "eng"
+            }
         )
 
         result = response.json()
@@ -203,12 +214,22 @@ def extract_text(file):
         if result.get("ParsedResults"):
             text = result["ParsedResults"][0].get("ParsedText", "")
         else:
-            text = "⚠️ No text detected"
+            text = ""
+
+        # -------- FALLBACK (TESSERACT) --------
+        if text.strip() == "":
+            img = Image.open(file)
+            text = pytesseract.image_to_string(img)
+
+        # -------- CLEANING --------
+        text = text.replace("\n", " ")
+        text = re.sub(r'[^a-zA-Z\s]', ' ', text)
+        text = re.sub(r'\s+', ' ', text).strip()
 
         return text
 
-    except:
-        return "⚠️ OCR failed. Try another image."
+    except Exception as e:
+        return f"⚠️ OCR failed: {e}"
 
 # =====================================
 # TABS
@@ -269,7 +290,7 @@ with tab2:
         st.image(img, caption="Uploaded Image", use_container_width=True)
 
         with st.spinner("Extracting text..."):
-            text = extract_text(uploaded)   # ✅ changed
+            text = extract_text(uploaded)
 
         st.subheader("📄 Extracted Text")
         st.write(text)
